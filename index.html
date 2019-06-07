@@ -5,73 +5,98 @@
   <meta charset="utf-8">
   <title>Product Landing Page</title>
   <link href="style.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header id="header">
+    <img id="header-img" src="https://cdn.pixabay.com/photo/2017/06/14/01/14/storage-in-the-cloud-2400720_960_720.png" alt="company logo">
     <h1 id="title">Cloud Services</h1>
-    <img id="header-img" src="https://cdn.pixabay.com/photo/2017/06/14/01/14/storage-in-the-cloud-2400720_960_720.png" width="100px" height="100px" alt="company logo">
     <nav id="nav-bar">
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#pricing">Pricing</a>
-      <a class="nav-link" href="#reviews">Reviews</a>
+      <ul>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="#reviews">Reviews</a></li>
+      </ul>
     </nav>
   </header>
-  <form id="form" action="https://www.freecodecamp.com/email-submit">
-    <label for="email">Sign up for our newsletter:</label>
-    <input id="email" type="email" name="email" placeholder="Enter your email address"></input>
-    <input id="submit" type="submit" value="Submit"></input>
-  </form>
-  <div id="about">
-    <h2>About</h2>
-    <h3>Cloud Services: your personal organization software. Any time, from any device.</h3>
-    <p>Documents, Backups, Calendar, Meetings, Chat. Cloud Services provides modern infrastructure for small businesses and freelancers around the world.</p>
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/B-Kv3WuQlo8" frameborder="0" allowfullscreen></iframe>
-  </div>
-  <div id="pricing">
-    <h2>Pricing</h2>
-    <div class="pricing">
-      <h3>Basic</h3>
-      <ul>
-        <li>Documents</li>
-        <li>Calendar</li>
-      </ul>
+  <main>
+    <div id="about" class="section">
+      <h2>About Us</h2>
+      <div id="about-content">
+        <h3>Personal organization software.<br />Any time, from any device.</h3>
+        <p>Cloud Services provides modern infrastructure for small businesses and freelancers around the world. Applications include Documents, Backups, Calendar, Meetings, and Chat.</p>
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/B-Kv3WuQlo8" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
-    <div class="pricing">
-      <h3>Professional</h3>
-      <ul>
-        <li>Documents</li>
-        <li>Calendar</li>
-        <li>Backups</li>
-      </ul>
+    <div id="pricing" class="section">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <h3>Basic</h3>
+        <hr>
+        <div class="dot">
+          <h4>$25</h4>
+        </div>
+        <ul>
+          <li>Documents</li>
+          <li>Calendar</li>
+        </ul>
+      </div>
+      <div class="pricing">
+        <h3>Professional</h3>
+        <hr>
+        <div class="dot">
+          <h4>$50</h4>
+        </div>
+        <ul>
+          <li>Documents</li>
+          <li>Calendar</li>
+          <li>Backups</li>
+        </ul>
+      </div>
+      <div class="pricing">
+        <h3>Premium</h3>
+        <hr>
+        <div class="dot">
+          <h4>$100</h4>
+        </div>
+        <ul>
+          <li>Documents</li>
+          <li>Calendar</li>
+          <li>Backups</li>
+          <li>Chat</li>
+          <li>Meetings</li>
+        </ul>
+      </div>
     </div>
-    <div class="pricing">
-      <h3>Premium</h3>
-      <ul>
-        <li>Documents</li>
-        <li>Calendar</li>
-        <li>Backups</li>
-        <li>Chat</li>
-        <li>Meetings</li>
-      </ul>
-    </div>
-  </div>
 
-  <div id="reviews">
-    <h2>Reviews</h2>
-    <div class="review">
-      <h3>Money well spent.</h3>
-      <p>No frills, exactly what we need for our employees.</p>
+    <div id="reviews" class="section">
+      <h2>Reviews</h2>
+      <div class="review-content">
+        <div class="review">
+          <h3>Money well spent.</h3>
+          <p>No frills, exactly what we need for our employees.</p>
+          <p class="reviewer"> - Marge, <i>BigCo. Inc.</i></p>
+        </div>
+        <div class="review">
+          <h3>Freelancer's dream</h3>
+          <p>A full suite of apps for much cheaper than the competitors.</p>
+          <p class="reviewer"> - Lisa, <i>Lisa's World Prod.</i></p>
+        </div>
+        <div class="review">
+          <h3>Great support</h3>
+          <p>Answered my questions right away and even introduced a new feature that we requested.</p>
+          <p class="reviewer"> - Maggie, <i>Supreme Leader</i></p>
+        </div>
+      </div>
     </div>
-    <div class="review">
-      <h3>Freelancer's dream</h3>
-      <p>A full suite of apps for much cheaper than the competitors.</p>
-    </div>
-    <div class="review">
-      <h3>Great support</h3>
-      <p>Answered my questions right away and even introduced a new feature that we requested.</p>
-    </div>
-  </div>
+
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <label for="email">Sign up for our newsletter:</label>
+      <input id="email" type="email" name="email" placeholder="Enter your email address"></input>
+      <input id="submit" type="submit" value="Submit"></input>
+    </form>
+  </main>
 
 
 
