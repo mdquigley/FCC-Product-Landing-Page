@@ -1,0 +1,137 @@
+/*
+Color Palette
+#cfddeb - 207 221 235 - light blue
+#ff496c - pink
+#00a59d - 0 165 157 - logo teal
+*/
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #cfddeb;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.2);
+}
+
+#header-img {
+  width:60px;
+  height: 60px;
+  padding-right: 50px;
+}
+#nav-bar li{
+  display: inline-block;
+  font-size: 1.25em;
+  padding-left: 0.5em;
+}
+#nav-bar li a{
+  text-decoration: none;
+  color: #00a59d;
+}
+#nav-bar li a:hover{
+  color: #ff496c;
+}
+
+main {
+  padding-top: 100px;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+main h2 {
+  text-align: left;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 50px;
+}
+
+@media (max-width: 700px) {
+  header {
+  flex-direction: column;
+  font-size: 0.75em
+  }
+  #nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  #header-img {
+    padding: 0;
+  }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pricing {
+    margin-top: 25px;
+  }
+}
+
+#about-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  /* text-align: left; */
+}
+.pricing {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.2);
+  width: 150px;
+  height: 250px;
+}
+.pricing ul{
+  list-style: none;
+  padding-left: 0;
+}
+.dot {
+  width:50px;
+  height: 50px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgba(207, 221, 235, 0.5);
+}
+.dot h4 {
+  padding-top: 25%;
+}
+
+.pricing h3 {
+  padding: 0;
+  margin: 0;
+  background-color: rgba(0, 165, 157, 0.5);
+}
+
+hr {
+  padding: 0;
+  margin: 0;
+}
+.review-content {
+  display: flex;
+  flex-direction: column;
+}
+.reviewer {
+  text-align: right;
+}
+.review {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1), 0 6px 6px rgba(0,0,0,0.2);
+  padding: 10px;
+  margin: 20px;
+  background-color: rgba(207, 221, 235, 0.5);
+}
+
+#form {
+  justify-content: center;
+  padding-left: 15%;
+  margin: 20px;
+}
